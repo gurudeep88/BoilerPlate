@@ -13,7 +13,7 @@ const User=require('./models/User');
 mongoose.connect(config.MONGO_URI,
  {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (err)=>{
     if(!err) {
-        console.log('DB connected');
+        console.log('DB connected successfully');
     }
     else{
         console.log(err);
